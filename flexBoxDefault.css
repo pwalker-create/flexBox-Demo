@@ -1,0 +1,26 @@
+* { /*what is this? OOh Css show says it's a selector! how does it work?*/
+    color:white;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{ /*EEEEEEDDDDDD  interesting, haven't seen this before*/
+    background: linear-gradient(to right, #007991, #78ffd6);
+    min-height: 100vh;
+    font-size: 20px;
+} 
+
+
+.container > div { /*target first div below container, NOT THE CONTAINER*/
+    color: white;
+    background-color: rgba(0,0,255,0.2);
+    border: 1px solid white;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    
+}
+
+.container > div:hover { 
+    background-color: rgba(0,0,255,0.2);
+}

@@ -1,0 +1,79 @@
+.flexBox{
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between; /*this doesn't have any affect, wut*/
+    padding: 5%;
+
+}
+
+.flexDirection {
+    display: flex; /*immediately changes the main axis to left to right */
+    border: 2px solid black;
+    flex-direction: row-reverse;
+    margin-bottom: 50px; /*EDDDD why can't i put this on the container class in the default.css file?*/
+}
+
+.justifyContent {
+    display: flex; /*immediately changes the main axis to left to right */
+    border: 1px solid black;/*
+    justify-content: flex-end;  aligns to the otherside, but in the opposite order as using "flex-direction: row-reverse" */
+    /*^justify-content always only works for main axis, different for mobile, therefore you need to specify it using flex-direction
+    
+    justify-content: space-around;  equal padding around each "object"? */
+    justify-content: space-between; /*just padding between "objects"*/
+    margin-bottom: 50px;
+}
+
+.alignItems{
+    display: flex; /*immediately changes the main axis to left to right */
+    border: 3px solid black;
+    justify-content: center;
+    /* align-items: flex-start/end brings to top of space or bottom */
+    align-items: baseline; 
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 50px;
+    color: black;
+}
+
+.flexWrap {
+    display: flex;
+    border: 2px solid black;
+    width: 600px;
+    flex-wrap: wrap-reverse;
+    margin-bottom: 50px;
+}
+
+.orderingElements {
+    display: flex;
+    align-items: row;
+    border: 2px solid black;
+}
+
+.one {
+    order:-2; /*every value has the default value of 0, - values go at front, positive value at the back */
+}
+
+.two {
+    order: -1;
+}
+
+.container div:nth-child(6) { /*oooh coolsmartreal, saves having to assign(?) classes */
+    order: -3;
+}
+
+.flexGrow {
+    display: flex;
+    border: 2px solid black;
+    margin-bottom: 50px;
+}
+
+.flexGrow div {/*affects every div inside the container*/
+    flex-grow: 1; /*default value is 0 */
+}
+
+.flexGrow div:nth-child(2){
+    flex-grow: 2;
+}

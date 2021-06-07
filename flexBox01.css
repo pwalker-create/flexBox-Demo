@@ -1,0 +1,23 @@
+.bg {
+    padding-bottom: 30%;
+    height: 100vh; /*whatever the device height is, just use that */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form > * { /*targets 1st child*/
+    border 0px;
+    padding: 10px;
+    background: #fff;
+    line-height: 60px;
+    font-size: 30px;
+}
+
+.form input [type="submit"] {
+    background: #2980b9;
+    border: 2px solid #2980b9;
+    color: white;
+}
+
